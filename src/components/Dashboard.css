@@ -1,0 +1,156 @@
+.dashboard-container {
+    width: 100vw;
+    background: #000D25;
+    color: white;
+}
+
+.user {
+    width: 100vw;
+    height: 5em;
+}
+.stats{
+    background: none;
+    display: grid;
+    grid-template-columns: minmax(300px, auto);
+    grid-gap: 1em;
+    /* justify-content: center; */
+}
+.user {
+    /* width: calc(100vw - 250px); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: none;    
+}
+.allcards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 700px));
+    grid-gap: 1em;
+    grid-auto-rows: minmax(300px, auto);
+    /* justify-content: center;
+    align-content: center;   */
+    padding-left: 1.2em;
+}
+.mobile-hidden{
+    display: none;
+}
+.stats , .activities , .team-activities, .team-members {
+    background: rgba(34, 34, 64, 1);
+    border-radius: 10px;
+    max-width: 90vw;
+}
+.stats {
+    background: none;
+}
+.cards{
+    background: rgba(34, 34, 64, 1);
+    border-radius: 10px;
+}
+
+.activities{
+    padding: 0.5rem 1.2em 0 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.activity-options{
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+.colors{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.activity-graph {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2em;
+    justify-content: space-between;
+    padding: 0 3em 0 3em;
+}
+
+.team-activities{
+    padding: 1em;
+    max-height: 350px;
+}
+.top-team {
+    display: flex;
+    align-items: center;
+    padding: 0 2em 0 2em;
+    justify-content: space-between;
+}
+.team-options{
+    display: flex;
+    align-items: center;
+}
+.wave {
+    width: 100%;
+    position: relative;
+    margin-top: 8em;
+}
+.team-members{
+    padding: 1em;
+}
+.content {
+    margin-top: -20px;
+}
+@media only screen and (min-width: 900px) {
+    .dashboard-container {
+        overflow-x: hidden;
+        max-width: calc(100vw - 270px);
+        position: relative;
+        left: 250px;
+        right: 10px;
+    }
+    .allcards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, auto));
+        grid-gap: 1em;
+        grid-auto-rows: minmax(300px, auto);
+        margin: 1em;
+        padding-left: 0;  
+    }
+    
+    .user {
+        width: calc(100vw - 250px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+        background: none;    
+    }
+    .user-profile{
+        display: flex;
+        align-items: center;
+    }
+
+    .stats{
+        background: none;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, auto));
+        grid-gap: .8em;
+    }
+    .mobile-hidden{
+        display: block;
+    }
+    .wave {
+        width: 100%;
+        position: relative;
+        margin-top: 5em;
+    }
+  }
+

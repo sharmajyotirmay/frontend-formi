@@ -1,0 +1,132 @@
+* {
+    text-decoration: none;
+    font-style: none;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100vw;
+    height: 4.7em;
+    /* height: 100vh; */
+    /* background: rgb(121, 34, 121); */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background: rgba(19, 19, 43, 1);
+    z-index: 200;
+}
+
+.top-bar {
+    display: flex;
+    height: 4.7em;
+    width: 100vw;
+    justify-content: space-between;
+    border-bottom: 2px black solid;
+}
+
+.logo-mobile {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    padding: 1em;
+}
+
+.logo-image {
+    width: 3em;
+}
+
+.menu-icon-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    z-index: 500;
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    padding-top: 2em;
+    margin-top: 1.8em;
+    justify-content: flex-start;
+    gap: 1em;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(19, 19, 43, 1);
+}
+
+.sidebar-btn{
+    padding: 0 0 0 1em;
+}
+
+.sidebar-btn:hover {
+    border-left: 5px rgba(57, 84, 255, 1) solid;
+    background: rgba(57, 84, 255, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.click-link{
+    color: rgba(0, 173, 226, 1)
+}
+
+/* .hidden {
+    display: none;
+} */
+
+
+@media only screen and (min-width: 920px) {
+
+    .main-container {
+        max-width: 250px;
+        height: 100vh;
+        /* height: 100vh; */
+        color: black;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        position: fixed;
+    }
+
+    .top-bar {
+        height: 4.7em;
+        width: 15vw;
+        border-bottom: none;
+        justify-content: center;
+        height: auto;
+        padding-top: 40px;
+    }
+    .options {
+        position: relative;
+        font-size: 1rem;
+        margin-top: 50px;
+        gap: .3em;
+        width: 100%;
+    }
+    .menu-icon-mobile {
+        display: none;
+    }
+    .logo-mobile {
+        padding: 0;
+        width: 8em;
+    }
+    .logo-image {
+        width: 8em;
+    }
+    .sidebar-btn{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-self: start;
+        padding-left: 50px;
+    }
+    .click-link{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+  }

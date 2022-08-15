@@ -1,0 +1,23 @@
+.bars{
+    width: 5px;
+    height: 150px;
+    position: relative;
+}
+
+.bar1{
+    position: absolute;
+    width: 5px;
+    background: rgba(255, 211, 57, 1);
+    z-index: 400;
+    bottom: 0;
+}
+
+.bar2{
+    position: absolute;
+    width: 5px;
+    height: 150px;
+    background: rgba(57, 84, 255, 1);
+    z-index: 400;
+    bottom: 0;
+    left: 7px;
+}
